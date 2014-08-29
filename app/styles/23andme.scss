@@ -1,0 +1,195 @@
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media queries
+
+#flow {
+	margin-top: 35px;
+	margin-bottom: 35px;
+
+	.form-control {
+		border: none;
+		box-shadow: none;
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	.cd-container {
+	  width: 90%;
+	  max-width: 768px;
+	  margin: 0 auto;
+	  border-radius: 5px;
+	}
+	.cd-container:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.email-label {
+		float: left;
+		color: $color-2;
+	}
+
+	#btn-23 {
+		background-color: $color-4;
+		color: white;
+		font-weight: 300;
+	}
+	#btn-kit {
+		background-color: #B946C7;
+		color: white;
+		font-weight: 300;
+	}
+
+}
+
+#more {
+	float: left;
+	text-align: left;
+	padding-bottom: 15px;
+	color: $color-3;
+
+	.optional {
+		display: none
+	}
+}
+
+.cd-email {
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: transparent;
+	font-weight: 300;
+	color: $color-1;
+	z-index: 1;
+
+	@include MQ(M) {
+		@include font-size(24px);
+	}
+}
+
+.cd-email, .cd-submit {
+  width: 100%;
+  bottom: 0;
+}
+.cd-email:focus, .cd-submit:focus {
+  outline: none;
+}
+
+.cd-submit {
+  border: none;
+  padding: 18px;
+  font-size: 18px;
+  top: 50%;
+  cursor: pointer;
+  background-color: $color-4;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  z-index: 2;
+}
+
+.padding {
+	padding: 32px;
+}
+
+.form-group {
+	text-align: left;
+}
+
+input[type="email"] {
+
+}
+
+#body-info {
+	margin-top: 0px;
+}
+
+#data {
+	padding: 35px;
+	margin-bottom: 50px;
+
+	p {
+		text-align: left;
+		color: $color-3;
+	}
+}
+
+.dialogue {
+	border: 1px solid $color-3;
+	border-radius: 2px;
+}
+
+.icon {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+input:hover {
+		background-color: #ECF0F1;
+}
+
+label {
+	color: $color-2;
+}
+
+.datefield { 
+    padding: 0.3em; 
+    background: #FFF; 
+    border-radius: 4px;
+    color: $color-3;
+}
+
+.datefield * { 
+    display: inline-block;
+}
+
+.datefield input { 
+    width: 3em; 
+    padding: 0 0.4em; 
+    border: none; 
+    font-size: 18px;
+    font-weight: 300; 
+    background: none;
+    color: #000;            
+}
+
+.datefield input#year { width:5em; }
+.datefield input:focus { outline:none; }
+
+input[type=number]{
+    font-size:18px;
+    font-weight: 300;
+    padding:3px;
+    margin:0;
+    border:none;
+    border-radius:4px;
+    text-align:center;
+}
+
+input[type=number]:focus{
+    outline:none;
+}
+
+#account-info {
+	display: none;
+}
+#payment-23 {
+	display: none;
+}
+#payment-kit {
+	display: none;
+}
+#box-shipping {
+	padding-top:40px;
+	display: none;
+}
+.btn-submitted {
+	background-color: white;
+	color: $color-2;
+}
