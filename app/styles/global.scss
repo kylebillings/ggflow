@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media queries
+
 body {
 	font-family: "Lato";
 	font-weight: 300;
@@ -14,8 +20,37 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+.form-item {
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: transparent;
+	font-weight: 300;
+	color: $color-1;
+	z-index: 1;
+	:hover {
+		background-color: #ECF0F1;
+	}
+	:focus {
+		outline: none;
+	}
+
+	@include MQ(M) {
+		@include font-size(24px);
+	}
+}
+
+.form-item {
+  width: 100%;
+  bottom: 0;
+}
+
 .white-bg {
 	background-color: #fff;
+}
+
+.padding {
+	padding: 32px;
 }
 
 // Fix for Chrome Autofill Yellowing

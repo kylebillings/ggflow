@@ -23,7 +23,7 @@
         <main id="content" role="main">
                 <section id="flow">
                     <div class="cd-container white-bg text-center">
-                        <div id="data">
+                        <div id="data" class="padding">
                             <h1>Do you have your data?</h1><br/>
                             <img src="images/dna-icon.png"/>
                             <h4>Gene Guru reads through genomic data to generate scientifically ideal diets.<br/>If you have your data already, we can analyze it right away. If you need a kit, we will send you everything you need to get started.</h4><br/>
@@ -48,18 +48,18 @@
                                 <div class="form-group">
                                     <div class="padding">
                                         <label class="email-label" for="email">Full Name</label>
-                                        <input type="text" class="form-control email-form cd-email" name="name" placeholder="First and last name">
+                                        <input type="text" class="form-control email-form form-item" name="name" placeholder="First and last name">
                                         <label class="email-label" for="email">Address</label>
-                                        <input type="text" class="form-control email-form cd-email" name="address 1" placeholder="Address Line 1">
-                                        <input type="text" class="form-control email-form cd-email" name="address 2" placeholder="Address Line 2">
+                                        <input type="text" class="form-control email-form form-item" name="address 1" placeholder="Address Line 1">
+                                        <input type="text" class="form-control email-form form-item" name="address 2" placeholder="Address Line 2">
                                         <label class="email-label" for="email">City</label>
-                                        <input type="text" class="form-control email-form cd-email" name="city" placeholder="San Francisco">
+                                        <input type="text" class="form-control email-form form-item" name="city" placeholder="San Francisco">
                                         <label class="email-label" for="email">State</label>
-                                        <input type="text" class="form-control email-form cd-email" name="state" placeholder="California">
+                                        <input type="text" class="form-control email-form form-item" name="state" placeholder="California">
                                         <label class="email-label" for="email">Zip</label>
-                                        <input type="text" class="form-control email-form cd-email" name="zip" placeholder="94115">
+                                        <input type="text" class="form-control email-form form-item" name="zip" placeholder="94115">
+                                        <input type="submit" id="submit-1" class="cd-submit" value="Submit">
                                     </div> <!-- Padding -->
-                                <input type="submit" id="submit-1" class="cd-submit" value="Submit">
                                 </div>
                             </form>
                         </div> <!-- Shipping -->
@@ -90,8 +90,8 @@
                                             <label>EXP Year</label>
                                             <input type="text" name="expYY" class="form-control" maxlength="2" style="width:90%;" placeholder="15">
                                         </div>
+                                        <input onclick="#" type="submit" id="submit-1" class="cd-submit" value="Finish">
                                     </div> <br/><!-- Padding -->
-                                <input onclick="#" type="submit" id="submit-1" class="cd-submit" value="Finish">
                                 </div>
                             </form>
                         </div> <!-- box-payment -->
@@ -122,8 +122,8 @@
                                             <label>EXP Year</label>
                                             <input type="text" name="expYY" class="form-control" maxlength="2" style="width:90%;" placeholder="15">
                                         </div>
+                                        <input type="submit" id="submit-2" class="cd-submit" value="Continue">
                                     </div> <br/><!-- Padding -->
-                                <input type="submit" id="submit-2" class="cd-submit" value="Continue">
                                 </div>
                             </form>
                         </div> <!-- box-payment -->
@@ -134,13 +134,13 @@
                             <form action="">
                                 <div class="form-group">
                                     <label class="email-label" for="email">Name</label>
-                                    <input type="text" class="form-control email-form cd-email" name="first" placeholder="First name">
-                                    <input type="text" class="form-control email-form cd-email" name="last" placeholder="Last name">
+                                    <input type="text" class="form-control email-form form-item" name="first" placeholder="First name">
+                                    <input type="text" class="form-control email-form form-item" name="last" placeholder="Last name">
                                     <label class="email-label" for="email">Email Address</label>
-                                    <input type="email" class="form-control email-form cd-email" name="email" placeholder="Enter your email address">
+                                    <input type="email" class="form-control email-form form-item" name="email" placeholder="Enter your email address">
                                     <label class="email-label" for="email">Password</label>
-                                    <input type="password" class="form-control email-form cd-email" name="password" placeholder="Select a password">
-                                    <input type="password" class="form-control email-form cd-email" name="password" placeholder="Confirm your password">
+                                    <input type="password" class="form-control email-form form-item" name="password" placeholder="Select a password">
+                                    <input type="password" class="form-control email-form form-item" name="password" placeholder="Confirm your password">
                                     <br/>
                                     <!-- Optional Information -->
                                     <div id="more">
@@ -164,8 +164,8 @@
                                                 <br/>
                                         </div>
                                     </div> <!-- End Optional Information -->
-                                </div> <!-- Padding -->
                                     <input type="submit" id="submit" class="cd-submit" value="Continue To Your Dashboard!">
+                                </div> <!-- Padding -->    
                                 </div> <!-- Form Group -->
                                  
                                 </form>
