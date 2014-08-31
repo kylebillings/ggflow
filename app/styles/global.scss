@@ -9,11 +9,8 @@
 body {
 	font-family: "Lato";
 	font-weight: 300;
-	background: url('../images/low-poly-bg.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	background-color: #7620B7;
+	color: $color-3;
 }
 
 h1, h2, h3, h4, h5, h6 {

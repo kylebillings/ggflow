@@ -25,11 +25,12 @@
                     <div class="cd-container white-bg text-center">
                         <div id="data" class="padding">
                             <h1>Do you have your data?</h1><br/>
-                            <img src="images/dna-icon.png"/>
-                            <h4>Gene Guru reads through genomic data to generate scientifically ideal diets.<br/>If you have your data already, we can analyze it right away. If you need a kit, we will send you everything you need to get started.</h4><br/>
+                            <img src="images/icon-dna.gif" alt="" class="icon">
+                            <h4>Gene Guru reads through genomic data to generate scientifically ideal diets.</h4>
+                            <h4>If you already have your DNA, we can analyze it right away. If not, we will send you a test kit to collect a sample of your DNA for analysis.</h4><br/>
                             <div class="row">
                                 <div class="col-sm-4 col-sm-offset-2">
-                                    <input id="btn-23" type="button" value="I have 23andMe" class="btn btn-lg btn-block">
+                                    <input id="btn-23" type="button" value="I have my DNA" class="btn btn-lg btn-block">
                                 </div>
                                 <div class="col-sm-4">
                                     <input id="btn-kit" type="button" value="I Need a Testing Kit" class="btn btn-lg btn-block">
@@ -37,13 +38,13 @@
                             </div>
                         </div> <!-- #data -->
                         <div id="box-shipping">
-                            <h1>We'll send you one</h1>
-                            <h4>Enter your shipping address</h4>
+                            <h1>We'll send you one!</h1>
                             <div class="row">
                                 <div class="col-xs-6 col-xs-offset-3">
                                     <img class="img-responsive" src="images/gg-two-boxes.jpg" alt="Boxes">
                                 </div>
                             </div><br/> <!-- Box image -->
+                            <h2>Enter your shipping address</h2>
                             <form action="">
                                 <div class="form-group">
                                     <div class="padding">
@@ -65,7 +66,7 @@
                         </div> <!-- Shipping -->
                         <div id="payment-kit">
                             <h1>$189</h1>
-                            <h4>One testing kit, and lifetime access to your new DNA-based lifestyle.</h4>
+                            <h4>One testing kit (shipping October 1), and lifetime access to your new DNA-based lifestyle.</h4>
                             <!--<div class="row">
                                 <div class="col-xs-6 col-xs-offset-3">
                                     <img class="img-responsive" src="images/gg-two-boxes.jpg" alt="Boxes">
@@ -96,6 +97,8 @@
                             </form>
                         </div> <!-- box-payment -->
                         <div id="payment-23">
+                            <h1>Great! We can analyze it right now.</h1><br/>
+                            <img src="images/icon-dna.gif" alt="" class="icon">
                             <h1>$89</h1>
                             <h4>Analyze your DNA <strong>now</strong> and gain lifetime access to your new DNA-based lifestyle.</h4>
                             <!--<div class="row">
@@ -129,7 +132,7 @@
                         </div> <!-- box-payment -->
                         <div id="account-info">
                             <div class="padding">
-                            <img class="icon" src="images/dna-icon.png"/>
+                            <img src="images/icon-dna.gif" alt="" class="icon">
                             <h1>Create Your Gene Guru Account</h1>                            
                             <form action="">
                                 <div class="form-group">
@@ -220,6 +223,7 @@
                 e.preventDefault();
                 $(this).addClass( "btn-submitted" );
                 $('#payment-kit').show(300);
+                $("#submit-1").prop('value', 'Submitted');
                 $('html, body').animate({
                     scrollTop: $("#payment-kit").offset().top
                     }, 1000);
